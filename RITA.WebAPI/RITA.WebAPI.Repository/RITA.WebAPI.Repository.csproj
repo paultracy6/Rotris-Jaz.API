@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Utility\" />
+    <Folder Include="Validation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RITA.EntityFramework\RITA.EF\RITA.EF.csproj" />
+    <ProjectReference Include="..\RITA.WebAPI.Abstractions\RITA.WebAPI.Abstractions.csproj" />
+    <ProjectReference Include="..\RITA.WebAPI.Core\RITA.WebAPI.Core.csproj" />
+  </ItemGroup>
+
+</Project>

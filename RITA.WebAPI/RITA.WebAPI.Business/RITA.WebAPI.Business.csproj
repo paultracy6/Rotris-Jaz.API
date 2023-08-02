@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mappers\**" />
+    <Compile Remove="Profiles\**" />
+    <EmbeddedResource Remove="Mappers\**" />
+    <EmbeddedResource Remove="Profiles\**" />
+    <None Remove="Mappers\**" />
+    <None Remove="Profiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RITA.WebAPI.Abstractions\RITA.WebAPI.Abstractions.csproj" />
+    <ProjectReference Include="..\RITA.WebAPI.Core\RITA.WebAPI.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RITA.WebAPI.Abstractions\RITA.WebAPI.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
